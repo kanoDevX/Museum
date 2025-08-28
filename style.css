@@ -1,0 +1,662 @@
+@import "./reset.css";
+
+body {
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    width: 1920px;
+    margin: 0 auto;
+}
+
+.container {
+    max-width: 1480px;
+    padding: 0 20px;
+    margin: 0 auto;
+}
+
+header {
+    background-color: #030303;
+}
+
+.header-nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 59px 0;
+    align-items: baseline;
+}
+
+.header-logo {
+    display: flex;
+    gap: 0 20px;
+    align-items: baseline;
+}
+
+.header-logo span {
+    color: #FFFFFF;
+    font-size: 28px;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    font-family: "Forum", sans-serif;
+}
+
+.nav-list {
+    display: flex;
+    align-items: center;
+    gap: 0 52px;
+}
+
+.nav-item a {
+    font-weight: 200;
+    font-size: 22px;
+    color: #FFFFFF;
+    letter-spacing: 2px;
+}
+
+.welcome-louvre {
+    background-color: #030303;
+    height: 795px;
+    color: #FFFFFF;
+}
+
+.welcome-inner {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+}
+
+.welcome-title {
+    max-width: 600px;
+    z-index: 1;
+    padding-top: 150px
+}
+
+.welcome-title h1 {
+    font-family: "Forum", sans-serif;
+    font-size: 80px;
+    line-height: 90px;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+}
+
+.welcome-title h2 {
+    font-weight: 300;
+    font-size: 28px;
+    letter-spacing: 2px;
+    padding-top: 25px;
+    padding-bottom: 103px;
+}
+
+.welcome-title a {
+    font-weight: 300;
+    font-size: 22px;
+    letter-spacing: 2px;
+    padding: 25px 65px;
+    background-color: #710707;
+    color: #FFFFFF;
+    border-radius: 10px;
+
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.welcome-title a:hover {
+    background-color: #4b0505;
+    transform: scale(1.1);
+    box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+}
+
+.welcome-img {
+    background-image: url(./images/main-welcome/866d167d547b76e4fd16e15cb7b1663eb01cc84e.jpg);
+    background-repeat: no-repeat;
+    background-position-x: right;
+    height: 750px;
+    width: 1000px;
+    position: absolute;
+    right: 0;
+    box-shadow: inset 100px 0 80px #000;
+}
+
+.welcome-panel {
+    display: flex;
+    padding: 50px 75px;
+    background-color: #030303;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    top: 690px;
+    align-items: center;
+    gap: 0 55px;
+}
+
+.welcome-panel p {
+    font-size: 22px;
+    line-height: 40px;
+    letter-spacing: 2.1px;
+    text-transform: uppercase;
+}
+
+.welcome-blocks {
+    display: flex;
+    gap: 0 25px;
+}
+
+.welcome-blocks span {
+    display: block;
+    width: 16px;
+    height: 16px;
+    cursor: pointer;
+    background-color: #FFFFFF;
+    transition: all 0.3s ease;
+}
+
+.welcome-blocks span:hover {
+    background-color: #D2B183;
+}
+
+.welcome-arrows {
+    display: flex;
+    gap: 0 20px;
+}
+
+.welcome-arrows img {
+    cursor: pointer;
+}
+
+.visiting-inner {
+    padding-bottom: 70px;
+}
+
+.visiting-inner h2 {
+    padding-top: 80px;
+    color: #9D8665;
+    font-family: "Forum", sans-serif;
+    font-size: 80px;
+    line-height: 90px;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+
+    padding-bottom: 25px;
+    border-bottom: 3px solid #710707;
+}
+
+.visiting-items {
+    display: flex;
+    padding-top: 70px;
+    justify-content: space-between;
+    gap: 70px 0;
+    flex-wrap: wrap;
+}
+
+.visiting-item {
+    width: 440px;
+}
+
+.visiting-title {
+    padding-top: 26px;
+}
+
+.visiting-title h3 {
+    font-family: "Forum", sans-serif;
+    font-size: 32px;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+}
+
+.visiting-title h3::after {
+    display: block;
+    content: "";
+    background-color: #710707;
+    width: 300px;
+    height: 2px;
+    margin-top: 10px;
+}
+
+.visiting-title h4 {
+    font-weight: 200;
+    font-size: 22px;
+    padding-top: 13px;
+}
+
+.visiting-title p {
+    font-weight: 100;
+    font-size: 18px;
+    padding-top: 10px;
+}
+
+.explore-louvre {
+    background-color: #030303;
+    color: #FFFFFF;
+}
+
+.explore-inner {
+    display: flex;
+    justify-content: space-between;
+    padding: 75px 0;
+}
+
+.explore-title {
+    max-width: 660px;
+}
+
+.explore-title h2 {
+    font-family: "Forum", sans-serif;
+    font-size: 80px;
+    line-height: 90px;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+
+    padding-bottom: 20px;
+    border-bottom: 3px solid #710707;
+}
+
+.explore-title p:nth-child(2) {
+    padding-top: 70px;
+}
+
+.explore-title p {
+    font-weight: 300;
+    font-size: 22px;
+    line-height: 38.5px;
+    padding-top: 30px;
+}
+
+.explore-title p span {
+    color: #CAAA7D;
+}
+
+.video-inner {
+    padding-top: 75px;
+}
+
+.video-title {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 40px;
+    align-items: center;
+}
+
+.video-title h2 {
+    font-family: "Forum", sans-serif;
+    font-size: 80px;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    color: #9D8665;
+}
+
+.video-title p {
+    font-weight: 300;
+    font-size: 22px;
+    line-height: 38.5px;
+    max-width: 720px;
+}
+
+.video-inner video {
+    width: 100%;
+    transform: scaleY(0.9);
+}
+
+.video-items {
+    display: flex;
+    justify-content: space-between;
+}
+
+.video-item {
+    position: relative;
+    width: 452px;
+    height: 254px;
+    background-repeat: repeat;
+    background-size: cover;
+    color: #FFFFFF;
+}
+
+.poster1 {
+    background-image: url("./images/main-video/poster/poster.png");
+}
+
+.poster2 {
+    background-image: url("./images/main-video/poster/poster1.png");
+}
+
+.poster3 {
+    background-image: url("./images/main-video/poster/poster2.png");
+}
+
+.video-link {
+    display: flex;
+    align-items: center;
+    padding-left: 10px;
+    padding-top: 13px;
+}
+
+.video-link p {
+    font-size: 18px;
+    line-height: 38.5px;
+    padding-left: 10px;
+    padding-right: 20px;
+}
+
+.video-dots {
+    height: 16px;
+    margin-left: auto;
+    padding-right: 30px;
+}
+
+.video-youtube {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.video-slider {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    padding-top: 40px;
+    padding-bottom: 75px;
+}
+
+.video-slider span {
+    display: block;
+    content: "";
+    width: 12px;
+    height: 12px;
+    background-color: #999999;
+    cursor: pointer;
+    border-radius: 50%;
+    transition: all 0.3s ease;
+}
+
+.video-slider span:hover {
+    background-color: #333333;
+}
+
+.gallery-louvre {
+    background-color: #030303;
+    position: relative;
+}
+
+.gallery-inner {
+    overflow: hidden;
+    height: 2200px;
+}
+
+.gallery-inner h2 {
+    font-family: "Forum", sans-serif;
+    color: #FFFFFF;
+    font-size: 80px;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    padding-top: 80px;
+}
+
+.gallery-list {
+    padding-top: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    gap: 25px 24px;
+}
+
+.gallery-list img:nth-child(1), .gallery-list img:nth-child(3) {
+    margin-top: 50px;
+}
+
+.gallery-list img:nth-child(5) {
+    margin-top: -175px;
+}
+
+.gallery-list img:nth-child(8) {
+    margin-top: -185px;
+}
+
+.gallery-list img:nth-child(9) {
+    margin-top: -115px;
+}
+
+.gallery-list img:nth-child(11) {
+    margin-top: -80px;
+}
+
+.gallery-list img:nth-child(12) {
+    margin-top: -115px;
+}
+
+.gallery-inner::after {
+    content: "";
+    position: absolute;
+    z-index: 5;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 300px;
+    background: linear-gradient(to top, #000, transparent);
+    pointer-events: none;
+}
+
+.tickets-louvre {
+     padding-bottom: 75px;
+}
+
+.tickets-inner h2{
+    padding-top: 70px;
+    padding-bottom: 30px;
+    font-family: "Forum", sans-serif;
+    font-size: 80px;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    color: #9D8665;
+
+    border-bottom: 3px solid #710707;
+}
+
+.tickets-flex {
+    padding-top: 75px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.tickets-form {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+}
+
+.tickets-radio {
+    padding-right: 265px;
+}
+
+.tickets-radio h3 {
+    font-weight: 700;
+    font-size: 28px;
+    padding-bottom: 55px;
+}
+
+.radio-inner {
+    display: flex;
+    flex-direction: column;
+    font-size: 22px;
+    font-weight: 300;
+    gap: 25px 0;
+}
+
+.radio-inner label {
+    display: flex;
+    gap: 0 18px;
+}
+
+.radio-inner label input {
+    accent-color: #000000;
+}
+
+.tickets-amount h3 {
+    font-weight: 700;
+    font-size: 28px;
+    text-align: end;
+}
+
+.tickets-amount h3:nth-child(3) {
+    padding-top: 50px;
+    letter-spacing: 2px;
+}
+
+.amount-submit {
+    position: absolute;
+    width: 175px;
+    height: 50px;
+    font-weight: 300;
+    font-size: 22px;
+    letter-spacing: 2px;
+    background-color: #000;
+    color: #FFFFFF;
+    right: 0;
+    bottom: 100px;
+}
+
+.amount-inner {
+    display: flex;
+    flex-direction: column;
+    width: 175px;
+}
+
+.amount-inner label:nth-child(2) {
+    padding-top: 10px;
+}
+
+.amount-inner label {
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+    font-size: 22px;
+    padding-top: 32px;
+    padding-left: 24px;
+    gap: 18px 0;
+}
+
+.amount-elems {
+    display: flex;
+    align-items: center;
+    font-size: 22px;
+    border: 3px solid #000;
+    padding: 3px 0;
+}
+
+.amount-elems button {
+    font-size: 32px;
+    padding: 0 12px;
+}
+
+.amount-elems span {
+    padding: 0 30px;
+}
+
+.parallax-louvre {
+    display: block;
+    background-image: url(./images/main-parallax/parallax\ 1.png);
+    width: 100%;
+    height: 400px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.contacts-inner h2 {
+    padding-top: 70px;
+    font-family: "Forum", sans-serif;
+    font-size: 80px;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    color: #9D8665;
+
+    padding-bottom: 30px;
+    border-bottom: 3px solid #710707;
+}
+
+.contacts-elements {
+    padding: 70px 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.contacts-title h3 {
+    font-weight: 700;
+    font-size: 28px;
+}
+
+.contacts-items {
+    display: flex;
+    flex-direction: column;
+    gap: 30px 0;
+    font-weight: 300;
+    font-size: 22px;
+    padding-top: 50px;
+}
+
+footer {
+    background-color: #000;
+}
+
+.footer-up {
+    border-bottom: 3px solid #666666;
+}
+
+.footer-up-inner {
+    padding-top: 80px;
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 50px;
+    align-items: flex-end;
+}
+
+.footer-up-elements {
+    display: flex;
+    align-items: baseline;
+}
+
+.up-logo {
+    display: flex;
+    align-items: baseline;
+    gap: 0 25px;
+    padding-right: 140px;
+}
+
+.up-logo p {
+    font-size: 28px;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    font-family: "Forum", sans-serif;
+    color: #FFFFFF;
+}
+
+.up-items {
+    display: flex;
+    flex-direction: column;
+    gap: 25px 0;
+    padding-right: 170px;
+}
+
+.up-item a {
+    font-weight: 200;
+    font-size: 22px;
+    letter-spacing: 2px;
+    color: #FFFFFF;
+}
+
+.footer-up-contacts {
+    display: flex;
+    gap: 0 25px;
+}
+
+.footer-down {
+    color: #FFFFFF;
+    padding: 35px 0;
+}
+
+.footer-down-inner {
+    display: flex;
+    justify-content: space-between;
+
+    font-weight: 200;
+    font-size: 22px;
+    line-height: 22px;
+    letter-spacing: 2px;
+}
